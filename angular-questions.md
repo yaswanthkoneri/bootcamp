@@ -49,5 +49,5 @@ An entry component is any component that Angular loads imperatively, (which mean
 
 ### 24. What is transpiling, how does it work in angular
 
-### 25. 
+### 25. What are dev, peer and normal dependencies?
 
