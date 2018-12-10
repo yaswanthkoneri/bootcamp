@@ -51,3 +51,6 @@ An entry component is any component that Angular loads imperatively, (which mean
 
 ### 25. What are dev, peer and normal dependencies?
 
+### 26. What are child component and can you do lazy loading using them?
+
+
