@@ -3,12 +3,19 @@ function f1() {
     return 1;
 }
 
+alert(foo()); // returns 5. Declarations are loaded before any code can run.
+function foo() { return 5; }
+
 //Function Expression
-function f2() {
+let f2 = function() {
     return 2;
 }
 
 f2();//2
+
+
+alert(foo()); // ERROR! foo wasn't loaded yet
+var foo = function() { return 5; }
 
 //IFFE
 (function f2(i) {

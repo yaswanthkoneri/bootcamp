@@ -12,11 +12,11 @@ let car = function (e) {
 let me = new car(78) 
 //car { faisal: 78 }
 
-let u =  car(78) //undefined
+let u = car(78) //undefined
 // window.faisal = 78
 
 /**
- * private variables in js
+ * no private variables in js
  * but using closure we can create inner variables
  */
 let car = function(_color) {
