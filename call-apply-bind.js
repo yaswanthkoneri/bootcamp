@@ -20,6 +20,19 @@ var bound = addToThis.bind(obj);
 //returns the function with the input obj binded
 console.log(bound(1,2,3)); //8
 
+// polyfill for bind
+Function.prototype.bind = function (context) {
+    return () => {
+        this.call(context);
+    }
+}
+
+// polyfill for call
+Function.prototype.apply = function (context, params) {
+    let bindedFunction = this.bind(context);
+    return bindedFunction(params);
+}
+
 
 
 
